@@ -21,7 +21,6 @@ blog_button:
 
 # Navigation (comparirà nella homepage o nel layout)
 nav:
-  - {title: Blog, description: Updates and reflections from my work, url: '/en/blog/'}
   - {title: CV, description: Education and publications, url: '/cv/'}
   - {title: Projects, description: Outreach and current MSCA project, url: '/projects/'}
 
