@@ -22,6 +22,7 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
+    - {title: Blog, description: Posts and thoughts, url: '/blog'}
     - {title: Projects, description: My Projects, url: '/projects'}
     - {title: CV, description: Education and publications, url: '/cv'}
 
