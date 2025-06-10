@@ -1,5 +1,0 @@
-![blue](https://github.com/user-attachments/assets/2be9cb06-6ac0-43bf-a56f-6e67429486d0)
-![linkedin](https://github.com/user-attachments/assets/2adda2c0-fb55-4426-8fdc-6f8b0efcc162)
-![researchgate](https://github.com/user-attachments/assets/8a8a9895-1ee4-487f-93a1-0b989d7e0152)
-![twitter](https://github.com/user-attachments/assets/7adfc22c-5ee6-4a2c-9252-1461a794b4ca)
-![orcid](https://github.com/user-attachments/assets/b0c9b47f-421c-4e27-a84e-95b9ad97ab26)
