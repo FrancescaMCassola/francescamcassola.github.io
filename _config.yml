@@ -23,7 +23,13 @@ blog_button:
 # Navigation buttons in the front page.
 nav:
     - {title: Projects, description: My Projects, url: '/projects'}
+    - {title: Blog, description: Updates and reflections from my work, url: '/blog'}
     - {title: CV, description: Education and publications, url: '/cv'}
+
+# Optional blog paths by language
+blogs:
+  it: /it/blog
+  es: /es/blog
 
 # Pagination
 plugins: [jekyll-paginate]
