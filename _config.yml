@@ -2,49 +2,49 @@
 title: Francesca M. Cassola
 subtitle: Behavioural Ecologist and Science Communicator
 welcome_message: From behaviour to conservation, with a passion for storytelling.
-description: MSCA Postdoctoral Research Fellow at Anglia Ruskin University, Cambridge, UK
+description: MSCA Postdoctoral Research Fellow at Anglia Ruskin University, Cambridge, Uk
 creator: Francesca M. Cassola
 
-# URL base (se usi GitHub Pages come https://francescamcassola.github.io)
 url: "https://francescamcassola.github.io"
-baseurl: ""  # Lascia vuoto per GitHub Pages su dominio utente
 
-# Permalink structure
 permalink: /:year/:month/:title/
+
+# Format
 highlighter: rouge
-cover_color: red  # Disponibili: blue, green, purple, red, orange, slate
 
-# Blog button
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: red
+
+# The blog button should not be removed.
 blog_button:
-  title: Blog
-  description: Updates and reflections from my work
+    title: Blog
+    description: Visit blog
 
-# Main navigation
+# Navigation buttons in the front page.
 nav:
-  - {title: Blog, description: Updates and reflections from my work, url: '/en/blog'}
-  - {title: CV, description: Education and publications, url: '/cv'}
-  - {title: Projects, description: Outreach and current MSCA project, url: '/projects'}
+    - {title: Projects, description: My Projects, url: 'https://francescamcassola.github.io/projects'}
+    - {title: CV, description: Education and publications, url: 'https://francescamcassola.github.io/cv'}
 
+# Pagination
+plugins: [jekyll-paginate]
+paginate: 10
+paginate_path: "page/:num/"
 
-# Social links (attenzione: il tema mostra solo alcune voci – potremmo dover modificare il layout per aggiungere tutti)
+# Comment
+comment:
+    disqus: ''
+    # duoshuo: 
+    
+# Social
 social:
-  linkedin: https://www.linkedin.com/in/francescamauracassola/
+      linkedin: https://www.linkedin.com/in/francescamauracassola/
   twitter: https://x.com/xisca_cassola
   bluesky: https://bsky.app/profile/xiscacassola.bsky.social
   orcid: https://orcid.org/0000-0002-0849-0070
   researchgate: https://www.researchgate.net/profile/Francesca-Cassola
 
-# Pagination
-plugins:
-  - jekyll-paginate
-paginate: 10
-paginate_path: "page/:num/"
 
-# Comments (disabilitati correttamente)
-comment:
-  disqus: false
-
-# Google Analytics (opzionale, da attivare con ID reale)
+# Google Analytics
 ga:
-  # id: UA-xxxxxxxx
-  # host: auto
+    # id: your_ga_id
+    # host: your_host
