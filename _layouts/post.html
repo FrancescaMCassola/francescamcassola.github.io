@@ -5,28 +5,9 @@ layout: default
 <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="{{ page.date | date: date_to_xmlschema }}" itemprop="datePublished" class="post-meta__date date">
-        {{ page.date | date: "%F" }}
-      </time>
-      {% if page.tags %}
-      &#8226; <span class="post-meta__tags tags">{{ page.tags | join: ' ' }}</span>
-      {% endif %}
+      <time datetime="{{page.date | date: date_to_xmlschema}}" itemprop="datePublished" class="post-meta__date date">{{page.date | date: "%F"}}</time> &#8226; <span class="post-meta__tags tags">{{page.tags | join:' '}}</span>
     </div>
-
     <h1 class="post-title">{{ page.title }}</h1>
-
-    {% assign translations = site.posts | where: "ref", page.ref %}
-    {% if translations.size > 1 %}
-    <div class="language-switcher" style="text-align: right; margin-top: 1rem;">
-      {% for t in translations %}
-        {% unless t.lang == page.lang %}
-          <a href="{{ t.url }}">
-            {% if t.lang == "it" %}🇮🇹 IT{% elsif t.lang == "es" %}🇪🇸 ES{% elsif t.lang == "en" %}🇬🇧 EN{% endif %}
-          </a>
-        {% endunless %}
-      {% endfor %}
-    </div>
-    {% endif %}
   </header>
 
   <section class="post">
