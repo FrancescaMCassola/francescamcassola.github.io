@@ -15,25 +15,19 @@ highlighter: rouge
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
 cover_color: red
 
-# The blog button should not be removed.
-blog_button:
-    title: Blog
-    description: Visit blog
-
-# Navigation buttons in the front page.
-nav:
-    - {title: Blog, description: Posts and thoughts, url: '/blog'}
-    - {title: Projects, description: My Projects, url: '/projects'}
-    - {title: CV, description: Education and publications, url: '/cv'}
-
-# Optional blog paths by language
+# Blog path by language (usati solo per costruire i file)
 blogs:
   it: /it/blog
   es: /es/blog
 
+nav:
+  - {title: Blog, description: Updates and reflections from my work, url: '/blog'}
+  - {title: Projects, description: My Projects, url: '/projects'}
+  - {title: CV, description: Education and publications, url: '/cv'}
+
 # Pagination
 plugins: [jekyll-paginate]
-paginate: 10
+paginate: 5
 paginate_path: "page/:num/"
 
 # Comment
