@@ -22,8 +22,8 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Projects, description: My Projects, url: 'https://francescamcassola.github.io/projects'}
-    - {title: CV, description: Education and publications, url: 'https://francescamcassola.github.io/cv'}
+    - {title: Projects, description: My Projects, url: '/projects'}
+    - {title: CV, description: Education and publications, url: '/cv'}
 
 # Pagination
 plugins: [jekyll-paginate]
@@ -37,7 +37,7 @@ comment:
     
 # Social
 social:
-      linkedin: https://www.linkedin.com/in/francescamauracassola/
+  linkedin: https://www.linkedin.com/in/francescamauracassola/
   twitter: https://x.com/xisca_cassola
   bluesky: https://bsky.app/profile/xiscacassola.bsky.social
   orcid: https://orcid.org/0000-0002-0849-0070
