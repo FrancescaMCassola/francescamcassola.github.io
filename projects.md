@@ -38,4 +38,3 @@ Key collaborators include the *Centro de Estudios de Desarrollo Sustentable y Ap
 All content is available for free in Italian, English, and Spanish.
 
 [🔗 Discover more here](https://linktr.ee/dropsofscienceofficial)
-![image](https://github.com/user-attachments/assets/4bc30288-c611-4cae-8920-384cac503057)
