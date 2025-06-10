@@ -4,12 +4,14 @@
     <div class="panel-main__inner panel-inverted">
       <div class="panel-main__content">
 
-        <a href="/#blog" title="{{ site.blog_button.description }}" class="blog-button">
-  {{ site.blog_button.title }}
-</a>
+        <!-- Avatar -->
+        <a href="/" title="Back to homepage">
+          <img src="/assets/images/avatar.jpg" width="80" alt="{{ site.title }} logo" class="panel-cover__logo logo" />
+        </a>
 
+        <!-- Titolo -->
         <h1 class="panel-cover__title panel-title">
-          <a href="/#blog" title="Link to homepage for {{ site.title }}" class="blog-button">{{ site.title }}</a>
+          <a href="/" title="Back to homepage">{{ site.title }}</a>
         </h1>
 
         {% if site.subtitle %}
@@ -24,15 +26,19 @@
         <p class="panel-cover__description">{{ site.welcome_message }}</p>
         {% endif %}
 
+        <!-- Navigazione -->
         <div class="navigation-wrapper">
           <div>
             <nav class="cover-navigation cover-navigation--primary">
               <ul class="navigation">
+
+                <!-- Link al vero blog -->
                 <li class="navigation__item">
-                  <a href="/#blog" title="{{ site.blog_button.description }}" class="blog-button">
+                  <a href="/blog" title="{{ site.blog_button.description }}" class="blog-button">
                     {{ site.blog_button.title }}
                   </a>
                 </li>
+
                 {% for item in site.nav %}
                 <li class="navigation__item">
                   <a href="{{ item.url }}" target="_blank" title="{{ item.description }}">
