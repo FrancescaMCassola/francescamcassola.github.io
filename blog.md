@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: default
 title: Blog
 lang: en
 ref: blog
@@ -7,9 +7,10 @@ permalink: /blog/
 ---
 
 <div class="language-switcher" style="text-align: right; margin-top: 1rem;">
-  <a href="/it/blog">🇮🇹 IT</a> |
-  <a href="/es/blog">🇪🇸 ES</a>
+  <a class="btn-lang" href="/it/blog" title="IT">🇮🇹 IT</a>
+  <a class="btn-lang" href="/es/blog" title="ES">🇪🇸 ES</a>
 </div>
+
 
 {% for post in site.posts %}
   {% if post.lang == "en" %}
