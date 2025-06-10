@@ -1,49 +1,49 @@
 # Basic
-title: Vno Jekyll
-subtitle: A blog-orientation theme for Jekyll
-welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
-description: Vno Jekyll is a port of my Ghost theme vno.
-creator: <a href="http://onev.cat">@onevcat</a>
+title: Francesca M. Cassola
+subtitle: Behavioural Ecologist and Science Communicator
+welcome_message: From behaviour to conservation, with a passion for storytelling.
+description: MSCA Postdoctoral Research Fellow at Anglia Ruskin University, Cambridge, UK
+creator: Francesca M. Cassola
 
-url: "http://vno.onevcat.com"
+# URL base (se usi GitHub Pages come https://francescamcassola.github.io)
+url: "https://francescamcassola.github.io"
+baseurl: ""  # Lascia vuoto per GitHub Pages su dominio utente
 
+# Permalink structure
 permalink: /:year/:month/:title/
-
-# Format
 highlighter: rouge
+cover_color: red  # Disponibili: blue, green, purple, red, orange, slate
 
-# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: red
-
-# The blog button should not be removed.
+# Blog button (richiesto dal tema)
 blog_button:
-    title: Blog
-    description: Visit blog
+  title: Blog
+  description: Updates and reflections from my work
 
-# Navigation buttons in the front page.
+# Navigation (comparirà nella homepage o nel layout)
 nav:
-    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
-    # - {title: Another Button, description: A button, url: 'http://example.com'}
+  - {title: Blog, description: Updates and reflections from my work, url: '/en/blog/'}
+  - {title: CV, description: Education and publications, url: '/cv/'}
+  - {title: Projects, description: Outreach and current MSCA project, url: '/projects/'}
+
+# Social links (attenzione: il tema mostra solo alcune voci – potremmo dover modificare il layout per aggiungere tutti)
+social:
+  linkedin: https://www.linkedin.com/in/francescamauracassola/
+  twitter: https://x.com/xisca_cassola
+  bluesky: https://bsky.app/profile/xiscacassola.bsky.social
+  orcid: https://orcid.org/0000-0002-0849-0070
+  researchgate: https://www.researchgate.net/profile/Francesca-Cassola
 
 # Pagination
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
 paginate: 10
 paginate_path: "page/:num/"
 
-# Comment
+# Comments (disabilitati correttamente)
 comment:
-    disqus: vno-jekyll
-    # duoshuo: 
-    
-# Social
-social:
-    weibo: onevcat
-    github: onevcat
-    twitter: onevcat
-    gplus: 107108267983477358170
-    mail: onev@onevcat.com
+  disqus: false
 
-# Google Analytics
+# Google Analytics (opzionale, da attivare con ID reale)
 ga:
-    # id: your_ga_id
-    # host: your_host
+  # id: UA-xxxxxxxx
+  # host: auto
