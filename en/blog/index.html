@@ -1,0 +1,23 @@
+---
+layout: default
+title: Blog
+permalink: /en/blog/
+---
+
+<div class="page-content">
+  <h1>Blog</h1>
+
+  <div class="lang-switch" style="text-align: right; margin-top: -2.5em;">
+    <a href="{{ '/it/blog/' | relative_url }}"><img src="{{ '/assets/images/flag-it.svg' | relative_url }}" alt="Italiano" width="24"></a>
+    <a href="{{ '/es/blog/' | relative_url }}"><img src="{{ '/assets/images/flag-es.svg' | relative_url }}" alt="Español" width="24"></a>
+  </div>
+
+  <ul class="post-list">
+    {% for post in site.categories.blog-en %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a><br>
+        <small>{{ post.date | date: "%B %-d, %Y" }}</small>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
