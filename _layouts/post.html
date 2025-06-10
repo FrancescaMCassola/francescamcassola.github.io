@@ -3,16 +3,36 @@ layout: default
 ---
 
 <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <!-- Language switcher -->
+  <div class="language-switcher" style="text-align: right; margin-top: 1rem;">
+    {% assign translations = site.posts | where: "ref", page.ref %}
+    {% for t in translations %}
+      {% if t.lang != page.lang %}
+        <a href="{{ t.url }}" title="Read in {{ t.lang | upcase }}" class="language-link">
+          {% if t.lang == "en" %}EN{% endif %}
+          {% if t.lang == "it" %}IT{% endif %}
+          {% if t.lang == "es" %}ES{% endif %}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <!-- Intestazione del post -->
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="{{page.date | date: date_to_xmlschema}}" itemprop="datePublished" class="post-meta__date date">{{page.date | date: "%F"}}</time> &#8226; <span class="post-meta__tags tags">{{page.tags | join:' '}}</span>
+      <time datetime="{{ page.date | date: date_to_xmlschema }}" itemprop="datePublished" class="post-meta__date date">{{ page.date | date: "%F" }}</time>
+      &#8226;
+      <span class="post-meta__tags tags">{{ page.tags | join: ' ' }}</span>
     </div>
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
 
+  <!-- Contenuto -->
   <section class="post">
     {{ content }}
   </section>
+
 </article>
 
 {% include read-more.html %}
