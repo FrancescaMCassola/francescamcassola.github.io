@@ -6,6 +6,11 @@ ref: blog
 permalink: /blog/
 ---
 
+<div class="language-switcher" style="text-align: right; margin-top: 1rem;">
+  <a href="/it/blog">🇮🇹 IT</a> |
+  <a href="/es/blog">🇪🇸 ES</a>
+</div>
+
 {% for post in site.posts %}
   {% if post.lang == "en" %}
   <div class="post-preview">
