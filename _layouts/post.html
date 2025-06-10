@@ -13,21 +13,23 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
 
     {% assign translations = site.posts | where: "ref", page.ref %}
-    {% if translations.size > 1 %}
-    <div class="language-switcher" style="text-align: right; margin-top: 1rem;">
-      {% for post in translations %}
-        {% if post.lang != page.lang %}
-          {% if post.lang == "it" %}
+{% if translations.size > 1 %}
+  <div class="language-switcher" style="text-align: right; margin-top: 1rem;">
+    {% for post in translations %}
+      {% unless post.lang == page.lang %}
+        {% case post.lang %}
+          {% when "it" %}
             <a href="{{ post.url }}">🇮🇹 IT</a>
-          {% elsif post.lang == "es" %}
+          {% when "es" %}
             <a href="{{ post.url }}">🇪🇸 ES</a>
-          {% elsif post.lang == "en" %}
+          {% when "en" %}
             <a href="{{ post.url }}">🇬🇧 EN</a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
-    {% endif %}
+        {% endcase %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+{% endif %}
+
   </header>
 
   <section class="post">
