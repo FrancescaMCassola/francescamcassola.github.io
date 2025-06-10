@@ -2,19 +2,61 @@
 layout: default
 ---
 
-<div class="main-post-list hidden">
+<div class="index-page">
 
-  <ol class="post-list">
-    {% for post in paginator.posts %}
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h2>
-      <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 250 }}&hellip;</p>
-      <div class="post-list__meta"><time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{ post.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{ post.tags | join:' ' }}</span><a class="btn-border-small" href={{ post.url }}>继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-    {% endfor %}
-  </ol>
+  <div class="intro">
+    <h1>{{ site.title }}</h1>
+    <h2>{{ site.subtitle }}</h2>
+    <p class="welcome-message">{{ site.welcome_message }}</p>
+    <p class="description">{{ site.description }}</p>
+  </div>
 
-  {% include pagination.html %}
+  <div class="nav-buttons">
+    <a href="{{ '/en/blog/' | relative_url }}" class="button">Blog</a>
+    <a href="{{ '/cv/' | relative_url }}" class="button">CV</a>
+    <a href="{{ '/projects/' | relative_url }}" class="button">Projects</a>
+  </div>
 
 </div>
+
+<style>
+.index-page {
+  text-align: center;
+  padding: 3em 1em;
+}
+
+.intro h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+}
+
+.intro h2 {
+  font-size: 1.5em;
+  color: #666;
+  margin-bottom: 1em;
+}
+
+.welcome-message, .description {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+.nav-buttons {
+  margin-top: 2em;
+}
+
+.button {
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.75em 1.5em;
+  background-color: #d9534f; /* tono rosso che riprende il tema */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #c9302c;
+}
+</style>
