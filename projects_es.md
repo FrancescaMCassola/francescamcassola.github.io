@@ -36,4 +36,3 @@ Colaboradores clave: *Centro de Estudios de Desarrollo Sustentable y Aprovechami
 Todo el contenido es gratuito y está disponible en italiano, inglés y español.
 
 [🔗 Descúbrelo aquí](https://linktr.ee/dropsofscienceofficial)
-![image](https://github.com/user-attachments/assets/5ba90c50-b8ec-4f42-bbf7-b7308df9e16c)
