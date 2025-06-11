@@ -38,4 +38,3 @@ Tutti i contenuti sono gratuiti e disponibili in italiano, inglese e spagnolo.
 
 [🔗 Scopri di più qui](https://linktr.ee/dropsofscienceofficial)
 
-![image](https://github.com/user-attachments/assets/eb55311d-13f3-4855-b5c6-24f9a3ee6287)
