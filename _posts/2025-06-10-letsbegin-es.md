@@ -4,6 +4,7 @@ title: Empezamos!
 date: 2025-06-10
 lang: es
 ref: letsbegin
+comments: true
 ---
 
 Bienvenidos a lo que pretende ser mi página personal y profesional oficial. En la fecha en que escribo esto, todavía estoy aprendiendo a manejar las páginas de GitHub, así que pido disculpas de antemano por posibles errores o imperfecciones. Escribir el primer post para algo siempre me resulta un poco embarazoso… pero tenía que empezar por algún lado.
