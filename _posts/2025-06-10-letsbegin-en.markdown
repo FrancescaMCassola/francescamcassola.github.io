@@ -4,6 +4,7 @@ title: Let's Begin!
 date: 2025-06-10
 lang: en
 ref: letsbegin
+comments: true
 ---
 
 Welcome to what aims to be my official personal and professional page. As I write this, I'm still getting the hang of managing GitHub Pages, so I apologise in advance for any bugs or imperfections. Writing the first post for something is always a bit embarrassing for me — but I had to start somewhere.
