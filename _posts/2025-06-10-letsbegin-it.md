@@ -4,7 +4,9 @@ title: Iniziamo!
 date: 2025-06-10
 lang: it
 ref: letsbegin
+comments: true
 ---
+
 Benvenuti in quello che si propone essere la mia pagina personale e professionale ufficiale. Nella data in cui scrivo sono ancora alle prime armi con la gestione delle pagine di GitHub, quindi chiedo scusa in anticipo per eventuali bugs o imperfezioni. Scrivere il primo post per qualcosa è, per me, sempre un po’ imbarazzante, ma con qualcosa dovevo pur iniziare.
 
 Se siete capitati in questo sito significa che 
