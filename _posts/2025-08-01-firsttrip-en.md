@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First Trip Out of Town
-date: 2025-06-10
+date: 2025-08-01
 lang: en
 ref: firsttrip
 comments: true
