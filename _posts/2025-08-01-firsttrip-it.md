@@ -1,6 +1,6 @@
 ---
 layout: post
-title: La prima gita fuori porta
+title: La Prima Gita Fuori Porta
 date: 2025-08-01
 lang: it
 ref: firsttrip
